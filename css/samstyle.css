@@ -1,0 +1,207 @@
+@charset "utf-8";
+h1{
+    color: #333333;
+    background-color:rgba(255,182,193,0.5);
+    font-size: 200%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.navy{
+    color: #000080;
+}
+.red{
+    color: #ff0000;
+}
+body{
+    background-color: #ffffff;
+    color: #333333;
+    font-family: "メイリオ","Hiragino Sans",sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+p{
+    font-size: 100%;
+    line-height:1.8;
+}
+h2{
+    font-size: 120%;
+    border-bottom: 1px dashed #ffb6c1;
+    border-left: 10px solid #ffb6c1;
+    padding-left: 7px;
+}
+footer{
+    text-align: center;
+    background-color: #ffb6c1;
+    color: #333333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+article{
+    position: relative;
+}
+.catch{
+    color: #333333;
+    text-shadow: 0px 5px 10px #ffb6c1;
+    text-align: center;
+    padding: 30px 0;
+}
+header{
+    background-color: #ffb6c1;
+    color: #333333;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+    line-height:1.8;
+    font-size: 90%;
+}
+ul time{
+    border-radius: 10px;
+    background-color: #ffb6c1;
+    color: #333333;
+    font-size: 90%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+nav{
+    background: #ffb6c1;
+    padding: 5px;
+}
+nav ul{
+  display:flex;
+  justify-content:center;
+  gap: 50px;
+  list-style:none;
+}
+img{
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
+section{
+    margin: 30px;
+}
+.profile-card{
+    box-sizing: border-box;
+    width:300px;
+    background:#fff7fa;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+.icon{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+}
+.profile-text{
+    text-align:left;
+    margin-top:20px;
+    line-height:2;
+}
+.profile-text span{
+    color:#f58cab;
+    font-weight:bold;
+    margin-right:10px;
+}
+.btn{
+    display:block;
+    background:#ff8fb1;
+    color:white;
+    padding:12px;
+    border-radius:30px;
+    text-decoration:none;
+    margin-top:20px;
+}
+.btn:hover {
+    background: #ff6f96;
+}
+nav a:visited{
+    color: #333333;
+}
+nav a{
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+nav a:hover{
+    color: white;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+    .card-container {
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+.profile-card {
+    width: 25%;
+    padding: 25px;
+    font-size: 80%;
+}
+.diary-img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    max-width: 400px;
+    height: auto;
+}
+.diary-divider {
+    border: none;
+    border-top: 2px dashed #ffb6c1;
+    margin: 40px 0;
+    width: 100%;
+}
+.clear-line {
+    clear: both;
+}
+section p {
+    line-height: 2;
+    letter-spacing: 0.05em;
+}
+.back-top{
+    text-align: right;
+    margin: 30px;
+}
+.back-top a{
+    text-decoration: none;
+    color: #ff8fb1;
+    font-weight: bold;
+}
+.breadcrumb{
+    margin: 20px;
+    padding: 0;
+}
+.breadcrumb li{
+    display: inline;
+}
+.cat-list{
+    list-style-type: none;
+    padding-left: 25px;
+}
+.cat-list li{
+    list-style-image: url("../image/mz.png");
+}
+@media print{
+    nav{
+        display:none;
+    }
+
+    .btn{
+        display:none;
+    }
+
+    .back-top{
+        display:none;
+    }
+}
